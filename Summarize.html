@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SummarizeAI</title>
+    <link rel="stylesheet" href="Summarize.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>SummarizeAI</h1>
+            <p>Get detailed notes in seconds!</p>
+        </header>
+        
+        <main>
+            <section class="video-form-container">
+                <form id="video-form">
+                    <div class="form-group">
+                        <label for="video-link">Enter the video link</label>
+                        <input type="text" id="video-link" name="video-link" placeholder="e.g., https://www.youtube.com/watch?v=example" required>
+                    </div>
+                    
+                    
+                    <button type="submit" class="submit-btn">Generate detailed notes</button>
+            </form>
+            </section>
+            
+            <section class="results-container" id="results">
+                <div class="loading-indicator" id="loading">
+                    <div class="spinner"></div>
+                    <p>Summarizing your video content...</p>
+                </div>
+                <div class="video-summary" id="video-summary">
+                    <!-- Video summary will be inserted here via JavaScript -->
+                </div>
+                <div class="translation-container" id="translation-container" style="display: none;">
+                    <div class="translation-options">
+                        <span>Translate to:</span>
+                        <button class="translate-btn" data-lang="tamil">Tamil</button>
+                        <button class="translate-btn" data-lang="telugu">Telugu</button>
+                        <button class="translate-btn" data-lang="hindi">Hindi</button>
+                        <button class="translate-btn" data-lang="kannada">Kannada</button>
+                        <button class="translate-btn" data-lang="malayalam">Malayalam</button>
+                        <button class="translate-btn" data-lang="original">Original</button>
+                </div>
+            </section>
+        </main>
+        
+        <footer>
+            <p>&copy; 2025 SummarizeAI. All rights reserved.</p>
+            <p> Developed by Sri Abinaya & Deepa </p>
+
+        </footer>
+    </div>
+    
+    <script src="Summarize.js"></script>
+</body>
+</html
+
